@@ -36,8 +36,8 @@ The project aims to create a real-time system that can **detect**, **track**, an
     Guide_wire_sythetic_data
     ├── ...
     ├── sequence_frame_sequence_frame   # One of the 301 folders (naming convention still unclear)
-    │   ├── **gt**                          # 50 ground truth labels - i.e masks 
-    │   └── **png**                         # 50 greyscale x-ray images
+    │   ├── gt                          # 50 ground truth labels - i.e masks 
+    │   └── png                         # 50 greyscale x-ray images
     └── ...
 ```
 
@@ -49,16 +49,16 @@ The project aims to create a real-time system that can **detect**, **track**, an
     - TODO
 - **Structure**:
 ```
-    *DHM-DATA*   
-    ├── **DHM_guidewiredataset**
+    DHM-DATA
+    ├── DHM_guidewiredataset
     │   └── single_gw                   # Single Guidewire
     │       ├── ...
-    │       └── x_data_slice_y          # Folder containing *N* x-ray images 
-    └── **DHM_guidewiremask**
+    │       └── x_data_slice_y          # Folder containing N x-ray images 
+    └── DHM_guidewiremask
         └── DHM_single                  # Single Guidewire
             └── HessianNet              # Folder containing segmentation results from HessianNet
                 ├── ...
-                └── x_data_slice_y      # Folder containing *N* on-image masks   
+                └── x_data_slice_y      # Folder containing N on-image masks   
 ```
 ### 3. DHM_v2 Dataset
 - **Images**: *Single & Double greyscale* guidewire x-ray images.
@@ -68,26 +68,26 @@ The project aims to create a real-time system that can **detect**, **track**, an
     - TODO
 - **Structure**: 
 ```
-    *DHM-DATA_v2*   
-    ├── **DHM_guidewiredataset**
-    │   └── *single_gw*                 # Single Guidewire
+    DHM-DATA_v2
+    ├── DHM_guidewiredataset
+    │   └── single_gw                   # Single Guidewire
     │   │   ├── ...
-    │   │   └── x_data_slice_y          # Folder containing *N* x-ray images 
+    │   │   └── x_data_slice_y          # Folder containing N x-ray images 
     │   │
-    │   └── *double_gw*                 # Double Guidewire
+    │   └── double_gw                   # Double Guidewire
     │   │   ├── ...
-    │   │   └── k_data_slice_l          # Folder containing *N* x-ray images 
+    │   │   └── k_data_slice_l          # Folder containing N x-ray images 
     │   │
-    └── **DHM_guidewiremask**
-        ├── *DHM_single*                # Single Guidewire
+    └── DHM_guidewiremask
+        ├── DHM_single                  # Single Guidewire
         │   └── HessianNet              # Folder containing segmentation results from HessianNet
         │       ├── ...
-        │       └── x_data_slice_y      # Folder containing *N* on-image masks   
+        │       └── x_data_slice_y      # Folder containing N on-image masks   
         │
-        └── *DHM_double*                # Double Guidewire
+        └── DHM_double                  # Double Guidewire
             └── HessianNet              # Folder containing segmentation results from HessianNet
                 ├── ...
-                └── k_data_slice_l      # Folder containing *N* on-image masks 
+                └── k_data_slice_l      # Folder containing N on-image masks 
 ```
 
 ## Detection & Tracking Models
