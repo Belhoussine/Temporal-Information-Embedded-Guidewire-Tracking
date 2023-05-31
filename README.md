@@ -32,12 +32,14 @@ The project aims to create a real-time system that can **detect**, **track**, an
     - The **gt** & **png** folders contain **50 images each**
     - Each image has a **size of 512x512**
 - **Structure**:
+```
     Guide_wire_sythetic_data
     ├── ...
     ├── sequence_frame_sequence_frame   # One of the 301 folders (naming convention still unclear)
     │   ├── **gt**                          # 50 ground truth labels - i.e masks 
     │   └── **png**                         # 50 greyscale x-ray images
     └── ...
+```
 
 ### 2. DHM Dataset
 - **Images**: *Single greyscale* guidewire x-ray images.
@@ -46,6 +48,7 @@ The project aims to create a real-time system that can **detect**, **track**, an
 - **Statistics**: 
     - TODO
 - **Structure**:
+```
     *DHM-DATA*   
     ├── **DHM_guidewiredataset**
     │   └── single_gw                   # Single Guidewire
@@ -56,7 +59,7 @@ The project aims to create a real-time system that can **detect**, **track**, an
             └── HessianNet              # Folder containing segmentation results from HessianNet
                 ├── ...
                 └── x_data_slice_y      # Folder containing *N* on-image masks   
-
+```
 ### 3. DHM_v2 Dataset
 - **Images**: *Single & Double greyscale* guidewire x-ray images.
 - **Labels**: *On-image masks* - red pixels correspond to the guidewire.
@@ -64,6 +67,7 @@ The project aims to create a real-time system that can **detect**, **track**, an
 - **Statistics**: 
     - TODO
 - **Structure**: 
+```
     *DHM-DATA_v2*   
     ├── **DHM_guidewiredataset**
     │   └── *single_gw*                 # Single Guidewire
@@ -84,6 +88,7 @@ The project aims to create a real-time system that can **detect**, **track**, an
             └── HessianNet              # Folder containing segmentation results from HessianNet
                 ├── ...
                 └── k_data_slice_l      # Folder containing *N* on-image masks 
+```
 
 ## Detection & Tracking Models
 ### RobustPCA
