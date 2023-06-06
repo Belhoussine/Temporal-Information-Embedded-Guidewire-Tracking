@@ -6,6 +6,8 @@ Utility functions for all dataset related functions
 import numpy as np
 from PIL import Image
 from numpy import asarray
+"from src.utils.io import read_image"
+
 
 def mask_to_bbox(image_path):
     
@@ -17,7 +19,7 @@ def mask_to_bbox(image_path):
     "Scan the image vertically"
     "Starting from the top -> get top white pixel (y1)"
     for row in range(data.shape[0]):
-        for column in range(data.shape[0]):
+        for column in range(data.shape[1]):
             if np.all(data[row, column] == [255, 255, 255]):
                 y1 = row
                 print("y1 = ", y1)
@@ -26,8 +28,8 @@ def mask_to_bbox(image_path):
             break
         
     "Starting from the bottom --> get bottom white pixel (y2)"
-    for row in range(data.shape[-1]):
-        for column in range(data.shape[0]):
+    for row in reversed(range(data.shape[0])):
+        for column in range(data.shape[1]):
             if np.all(data[row, column] == [255, 255, 255]):
                 y2 = row
                 print("y2 = ", y2)
@@ -39,7 +41,7 @@ def mask_to_bbox(image_path):
     "Scan the image horizontally"
     "Starting from the left --> get left most white pixel (x1)"
 
-    for column in range (data.shape[0]):
+    for column in range (data.shape[1]):
         for row in range(data.shape[0]):
             if np.all(data[row, column] == [255, 255, 255]):
                 x1 = column
@@ -49,7 +51,7 @@ def mask_to_bbox(image_path):
             break
 
     "Starting from the right --> get right most white pixel (x2)"
-    for column in range (data.shape[-1]):
+    for column in reversed(range(data.shape[1])):
         for row in range(data.shape[0]):
             if np.all(data[row, column] == [255, 255, 255]):
                 x2 = column
@@ -103,6 +105,6 @@ def mask_to_bbox(image_path):
     pass
 
 "Input: The path of the mask image (e.g path/to/mask.pgn)"
-inp = Image.open("placeholder")
+inp = Image.open("C:/Users/ninam/OneDrive/Desktop/navi00000017.png")
 
 mask_to_bbox(inp)
