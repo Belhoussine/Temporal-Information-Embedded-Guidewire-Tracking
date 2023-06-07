@@ -23,7 +23,7 @@ def read_image(image_path, is_greyscale=False):
 def write_image(image_array, image_path):
     c = np.clip(image_array, 0, 255)
     img = Image.fromarray(np.asarray(c, dtype="uint8"), "RGB")
-    img.save(save_path)
+    img.save(image_path)
 
 # Delete Image from a given path
 def remove_image(save_path):
