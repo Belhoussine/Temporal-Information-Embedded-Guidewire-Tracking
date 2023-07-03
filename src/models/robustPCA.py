@@ -79,7 +79,7 @@ class RPCA:
                 plt.title(f"Sparse frame #{i}")
                 plt.show()
 
-    def save_results(self, dataset, frames, iterations, thresholds, resolution=(512, 512), result_folder="/home/belhoussine/dev/TUM/CS - Practical/Temporal-Information-Embedded-Guidewire-Tracking/results"):
+    def save_results(self, dataset, frames, iterations, thresholds, result_folder, resolution=(512, 512)):
         # Creating result folder
         result_folder = f"{result_folder}/{dataset}/frames_{frames}"
         print(f"Creating folder: {result_folder}")
