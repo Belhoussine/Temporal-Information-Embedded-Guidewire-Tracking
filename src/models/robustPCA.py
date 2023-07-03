@@ -1,6 +1,8 @@
 import numpy as np
 from pylab import plt
+from copy import deepcopy
 from utils.dataset import unstack_frames
+from utils.io import write_image, create_folder
 
 
 class RPCA:
@@ -64,14 +66,35 @@ class RPCA:
         self.S = Sk
         return Lk, Sk
 
-    def plot_results(self):
-        L_frames = unstack_frames(self.L)
-        S_frames = unstack_frames(self.S)
-        thresh = -15
+    def plot_results(self, thresholds, resolution=(512, 512)):
+        L_frames = unstack_frames(self.L, resolution)
+        S_frames = unstack_frames(self.S, resolution)
         for i, S_frame in enumerate(S_frames):
-            S_frame[S_frame >= thresh] = 0
-            S_frame[S_frame < thresh] = 255
-            plt.imshow(S_frame); plt.colorbar(); plt.title(f"Sparse frame #{i}"); plt.show()
+            for thresh in thresholds:
+                frame = deepcopy(S_frame)
+                frame[frame < thresh] = 0
+                frame[frame >= thresh] = 255
+                plt.imshow(frame, cmap="gray")
+                plt.colorbar()
+                plt.title(f"Sparse frame #{i}")
+                plt.show()
+
+    def save_results(self, dataset, frames, iterations, thresholds, resolution=(512, 512), result_folder="/home/belhoussine/dev/TUM/CS - Practical/Temporal-Information-Embedded-Guidewire-Tracking/results"):
+        # Creating result folder
+        result_folder = f"{result_folder}/{dataset}/frames_{frames}"
+        print(f"Creating folder: {result_folder}")
+        create_folder(result_folder)
+
+        # Unstacking frames and getting result frame
+        S_frames = unstack_frames(self.S, resolution)
+        for i, S_frame in enumerate(S_frames):
+            for thresh in thresholds:
+                frame = deepcopy(S_frame)
+                frame[frame < thresh] = 0
+                frame[frame >= thresh] = 255
+                frame_name = f"{dataset}_f{frames}_i{iterations}_t{thresh}_{i:02d}.png"
+                print(f"Writing frame to {frame_name}")
+                write_image(frame, f"{result_folder}/{frame_name}", mode="L")
 
     def plot_fit(self, size=None, tol=0.1, axis_on=True):
 

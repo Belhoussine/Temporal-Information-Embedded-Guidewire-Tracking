@@ -7,6 +7,8 @@ import numpy as np
 from utils.io import read_image
 
 # Convert mask image to bounding box
+
+
 def mask_to_bbox(image_path):
     # Read image (greyscale)
     seg_img = read_image(image_path, is_greyscale=True)
@@ -34,11 +36,15 @@ def mask_to_bbox(image_path):
         return bbox
 
 # Flatten an image matrix to a vector
+
+
 def flatten(image):
     img_vec = image.flatten()
     return img_vec
 
 # Stack sequence frames as columns
+
+
 def stack_frames(frame_paths, resolution=(512, 512), n_frames=10):
     n_pixels = resolution[0] * resolution[1]
     stacked_matrix = np.empty(shape=(n_pixels, n_frames), dtype='float')
@@ -52,6 +58,11 @@ def stack_frames(frame_paths, resolution=(512, 512), n_frames=10):
 def unstack_frames(stacked_matrix, resolution=(512, 512)):
     S_frames = []
     for col in range(stacked_matrix.shape[1]):
-        S_frame = np.reshape(stacked_matrix[:, col], (-1, resolution[1]))
+        S_frame = normalize(np.reshape(
+            stacked_matrix[:, col], (-1, resolution[1])))*255
         S_frames.append(S_frame)
     return S_frames
+
+
+def normalize(matrix):
+    return 1-(matrix-np.min(matrix))/(np.max(matrix)-np.min(matrix))
