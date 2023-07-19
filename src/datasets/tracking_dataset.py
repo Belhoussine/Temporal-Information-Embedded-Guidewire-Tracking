@@ -8,8 +8,6 @@ import numpy as np
 from PIL import Image
 from torch.utils.data import Dataset
 
-from ocg.src.utils.file_util import load_JSON
-from ocg.src.utils.image_util import load_image
 
 
 class TrackingDataset(Dataset):
@@ -24,70 +22,19 @@ class TrackingDataset(Dataset):
         return len(self.labels)
 
     def __getitem__(self, index):
-        img_path = self.labels[index]["meta"]["image_path"]
+        img_path = self.img_paths[index]
 
-        # Get image and the object's bounding box
-        image = load_image(img_path)
-        bbox, label = self.labels[index]['bbox'][:4], int(
-            self.labels[index]['bbox'][4])
-
-        # Get crop and class label
-        crop = self.get_crop(image, bbox, size=self.crop_size, to_pil=True)
+        # Get image and thebounding box
+        image = read_image(img_path)
+        label = self.label_paths[index]
 
         # Apply transforms on the generated crop
         if self.transform:
-            crop = self.transform(crop)
+            image, label = self.transform(image, label)
 
-        # Create a sample from the crop and its class label
-        # sample = crop, label
-        sample = crop, self.label_to_index(label)
+        # Create a sample from image and its label
+        sample = image, label
         return sample
-
-    def get_crop(self, image, bbox, size=64, to_pil=False, to_tensor=False):
-        image = image.astype(np.uint8)
-        img_h, img_w, _ = image.shape
-        l, t, r, b = map(int, map(np.ceil, bbox))
-
-        crop_size = max(r - l, b - t)
-        r, b = l + crop_size, t + crop_size
-
-        assert r - l == b - \
-            t, f"bbox is not square: width {r - l} != height {b - t}"
-
-        crop = np.zeros([crop_size, crop_size, 3], dtype=np.uint8)
-
-        # Top-left coordinates of where to put the image in the final crop
-        start_l = -l if l < 0 else 0
-        start_t = -t if t < 0 else 0
-
-        object_crop = image[max(0, t):min(img_h, b), max(0, l):min(img_w, r)]
-        crop[start_t: start_t + object_crop.shape[0],
-             start_l: start_l + object_crop.shape[1]] = object_crop
-
-        crop = cv2.resize(crop, dsize=(size, size),
-                          interpolation=cv2.INTER_CUBIC)
-
-        # self.show_image(image)
-        if to_pil:
-            crop = Image.fromarray(crop)
-        elif to_tensor:
-            crop = torch.from_numpy(crop) / 255.0
-            crop = crop.permute((2, 0, 1))
-
-        return crop
-
-    def get_class_map(self):
-        return {i: self.categories[i] for i in range(len(self.categories))}
-
-    def ohe(self, label):
-        label_index = self.categories.index(f"{label}")
-        return torch.FloatTensor([1 if i == label_index else 0 for i in range(len(self.categories))])
-
-    def label_to_index(self, label):
-        return self.categories.index(label)
-
-    def index_to_label(self, index):
-        return self.categories[index]
 
     def show_image(self, image, pil=False, tensor=False):
         if pil:

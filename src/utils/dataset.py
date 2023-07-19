@@ -4,7 +4,7 @@ Utility functions for all dataset related functions
 """
 
 import numpy as np
-from utils.io import read_image
+from src.utils.io import read_image
 
 # Convert mask image to bounding box
 
@@ -45,11 +45,14 @@ def flatten(image):
 # Stack sequence frames as columns
 
 
-def stack_frames(frame_paths, resolution=(512, 512), n_frames=10):
+def stack_frames(frame_paths, resolution=(512, 512), n_frames=10, frames_loaded = False):
     n_pixels = resolution[0] * resolution[1]
     stacked_matrix = np.empty(shape=(n_pixels, n_frames), dtype='float')
     for i, frame_path in enumerate(frame_paths):
-        frame = read_image(frame_path, is_greyscale=True)
+        if frames_loaded:
+            frame = frame_path
+        else:
+            frame = read_image(frame_path, is_greyscale=True)
         flat_frame = flatten(frame)
         stacked_matrix[:, i] = flat_frame
     return stacked_matrix
