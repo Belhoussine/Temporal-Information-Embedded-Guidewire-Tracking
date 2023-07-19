@@ -94,7 +94,15 @@ The project aims to create a real-time system that can **detect**, **track**, an
 ### RobustPCA
 - TODO
 ### Transformer-based model
-- TODO
+- DeTR
+    - Fine tune on Synthetic / DHM
+        - [ ] Create a custom PyTorch dataset corresponding to our datasets
+        - [ ] Create a custom PyTorch dataloader for the dataset
+        - [ ] Find pre-trained model and fine tune it
+            - Model: https://huggingface.co/facebook/detr-resnet-50
+            - Fine-tuning tutorial: https://huggingface.co/docs/transformers/tasks/object_detection
+            - Fine-tuning DeTR github tutorial: https://github.com/woctezuma/finetune-detr 
+            - Gray-scale finetuning: https://towardsdatascience.com/transfer-learning-on-greyscale-images-how-to-fine-tune-pretrained-models-on-black-and-white-9a5150755c7a
 
 ## Segmentation Models
 - TODO

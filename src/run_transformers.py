@@ -33,9 +33,5 @@ def main(frames, iterations, thresholds, dataset_folder, result_folder):
 
 
 if __name__ == "__main__":
-    config = read_yaml("../config.yaml")
-    for frames in config["frames"]:
-        for iterations in config["iterations"]:
-            print(f"\n[Frames] {frames} - [Iterations] {iterations}")
-            main(frames, iterations, config["thresholds"],
-                 config["dataset_folder"], config["result_folder"])
+    config = read_yaml("../config_transformers.yaml")
+    

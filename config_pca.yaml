@@ -1,0 +1,16 @@
+dataset_folder: /home/tracking/Temporal-Information-Embedded-Guidewire-Tracking/datasets
+result_folder: /home/tracking/Temporal-Information-Embedded-Guidewire-Tracking/results
+frames:
+  - 2
+  - 3
+  - 5
+  - 10
+  - 20
+iterations:
+  - 1000
+  - 5000
+  - 10000
+thresholds: 
+  - 125
+  - 150
+  - 175
