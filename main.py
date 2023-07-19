@@ -30,9 +30,7 @@ for frame_step in frame_steps:
         rpca.fit(max_iter=iterations, iter_print=100)
         # rpca.plot_results(resolution=resolution, thresholds=thresholds)
         rpca.save_results("baochang_test", frame_step, iterations,
-                          thresholds, result_folder_path, resolution=resolution)
-        break
-
+                          thresholds, result_folder_path, resolution=resolution, frame_ids=range(frame_id, frame_id + frame_step))
 # fig, ax = plt.subplots(1, number_of_frames, constrained_layout=True)
 # fig.canvas.set_window_title('Nifti Image Sequence')
 # fig.suptitle(f'Nifti 1 slices {number_of_frames} time Frames', fontsize=16)

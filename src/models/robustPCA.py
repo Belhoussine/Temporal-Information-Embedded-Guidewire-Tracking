@@ -79,7 +79,7 @@ class RPCA:
                 plt.title(f"Sparse frame #{i}")
                 plt.show()
 
-    def save_results(self, dataset, frames, iterations, thresholds, result_folder, resolution=(512, 512)):
+    def save_results(self, dataset, frames, iterations, thresholds, result_folder, resolution=(512, 512), frame_ids=None):
         # Creating result folder
         result_folder = f"{result_folder}/{dataset}/frames_{frames}"
         print(f"Creating folder: {result_folder}")
@@ -87,12 +87,14 @@ class RPCA:
 
         # Unstacking frames and getting result frame
         S_frames = unstack_frames(self.S, resolution)
-        for i, S_frame in enumerate(S_frames):
+        if frame_ids is None:
+            frame_ids = range(len(S_frames))
+        for i, S_frame in zip(frame_ids, S_frames):
             for thresh in thresholds:
                 frame = deepcopy(S_frame)
                 frame[frame < thresh] = 0
                 frame[frame >= thresh] = 255
-                frame_name = f"{dataset}_f{frames}_i{iterations}_t{thresh}_{i:02d}.png"
+                frame_name = f"{dataset}_f{frames}_i{iterations}_t{thresh}_{i:03d}.png"
                 print(f"Writing frame to {frame_name}")
                 write_image(frame, f"{result_folder}/{frame_name}", mode="L")
 
