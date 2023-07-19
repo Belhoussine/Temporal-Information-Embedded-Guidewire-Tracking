@@ -5,20 +5,19 @@ import matplotlib.pyplot as plt
 from src.utils.dataset import mask_to_bbox, stack_frames
 from src.models.robustPCA import RPCA
 
-nii_path = '/home/belhoussine/dev/TUM/CS - Practical/Temporal-Information-Embedded-Guidewire-Tracking/datasets/rawimg.nii.gz'
-result_folder_path = "/home/belhoussine/dev/TUM/CS - Practical/Temporal-Information-Embedded-Guidewire-Tracking/results"
+nii_path = '/home/tracking/Temporal-Information-Embedded-Guidewire-Tracking/datasets/rawimg.nii.gz'
+result_folder_path = "/home/tracking/Temporal-Information-Embedded-Guidewire-Tracking/results"
 
 # Load image (3D) [X,Y,time]
 nii_img = nib.load(nii_path)
 frames = np.transpose(nii_img.get_fdata(), (2, 0, 1))
 
 number_of_frames = frames.shape[0]
-number_of_frames = 4
 resolution = frames.shape[1:]
-thresholds = [160, 175, 190]
+thresholds = [170, 190]
 
 frame_steps = [5, 10]
-iterations = 1000
+iterations = 2000
 
 for frame_step in frame_steps:
     for frame_id in range(0, number_of_frames, frame_step):
