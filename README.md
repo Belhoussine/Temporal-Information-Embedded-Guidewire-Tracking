@@ -31,6 +31,7 @@ The project aims to create a real-time system that can **detect**, **track**, an
     - **301 folders** containing *gt* (ground truth labels - i.e masks) & *png* (X-ray images)
     - The **gt** & **png** folders contain **50 images each**
     - Each image has a **size of 512x512**
+    - 15017 total images
 - **Structure**:
 ```
     Guide_wire_sythetic_data
@@ -46,7 +47,7 @@ The project aims to create a real-time system that can **detect**, **track**, an
 - **Labels**: *On-image masks* - red pixels correspond to the guidewire.
     - *NOTE*: The labels were generated using HessianNet, they might not all correspond to ground truth.
 - **Statistics**: 
-    - TODO
+    - 825 total images
 - **Structure**:
 ```
     DHM-DATA
@@ -96,8 +97,8 @@ The project aims to create a real-time system that can **detect**, **track**, an
 ### Transformer-based model
 - DeTR
     - Fine tune on Synthetic / DHM
-        - [ ] Create a custom PyTorch dataset corresponding to our datasets
-        - [ ] Create a custom PyTorch dataloader for the dataset
+        - [x] Create a custom PyTorch dataset corresponding to our datasets
+        - [x] Create a custom PyTorch dataloader for the dataset
         - [ ] Find pre-trained model and fine tune it
             - Model: https://huggingface.co/facebook/detr-resnet-50
             - Fine-tuning tutorial: https://huggingface.co/docs/transformers/tasks/object_detection

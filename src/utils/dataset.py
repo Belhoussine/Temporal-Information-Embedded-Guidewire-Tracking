@@ -3,19 +3,27 @@ Utility functions for all dataset related functions
 >> mask_to_bbox: convert a mask label to a bounding box label
 """
 
+import os
 import numpy as np
 from src.utils.io import read_image
 
 # Convert mask image to bounding box
 
 
-def mask_to_bbox(image_path):
+def mask_to_bbox(image_path, is_dhm):
     # Read image (greyscale)
-    seg_img = read_image(image_path, is_greyscale=True)
+    if is_dhm:
+        seg_img = read_image(image_path, is_greyscale=False)
+        r,g,b = seg_img[:, :, 0], seg_img[:, :, 1], seg_img[:, :, 2]  
+        seg_img = (r > 200) & (g < 150) & (b < 150)
+        y_coords, x_coords = np.where(seg_img != 0)
+        if len(x_coords) == 0 and len(y_coords) == 0:
+            seg_img = (r <= 150) & (g <= 150) & (b > 200)
+    else:
+        seg_img = read_image(image_path, is_greyscale=True)
 
     # Get coordinates where pixel is not black (white)
     y_coords, x_coords = np.where(seg_img != 0)
-
     # If these coordinates exist
     if len(x_coords) and len(y_coords):
         w, h = seg_img.shape
@@ -32,8 +40,9 @@ def mask_to_bbox(image_path):
         # img = cv2.rectangle(seg_img, (x1,y1), (x2,y2), (255, 0, 0), 1)
         # plt.imshow(img, cmap='gray')
         # plt.show()
+        return bbox 
 
-        return bbox
+    return [-1, -1, -1, -1]
 
 # Flatten an image matrix to a vector
 
@@ -69,3 +78,37 @@ def unstack_frames(stacked_matrix, resolution=(512, 512)):
 
 def normalize(matrix):
     return 1-(matrix-np.min(matrix))/(np.max(matrix)-np.min(matrix))
+
+
+def get_img_gt_paths(root, image_paths, label_paths, is_dhm):
+    if is_dhm:
+        dhm_img_path = f'{root}/DHM_guidewiredataset'
+        dhm_gt_path = f'{root}/DHM_guidewiremask'
+        for path, dirs, files in os.walk(dhm_img_path):
+            dirs.sort()
+            if len(dirs) == 0:
+                for filename in sorted(files):
+                    full_path = os.path.join(path,filename)
+                    # relative_path = '/'.join(full_path.split('/')[-3:])
+                    image_paths.append(full_path)
+        for path, dirs, files in os.walk(dhm_gt_path):
+            dirs.sort()
+            if len(dirs) == 0:
+                for filename in sorted(files):
+                    full_path = os.path.join(path,filename)
+                    # relative_path = '/'.join(full_path.split('/')[-3:])
+                    label_paths.append(full_path)
+
+    else:
+        for path, dirs, files in os.walk(root):
+            dirs.sort()
+            if len(dirs) == 0:
+                for filename in sorted(files):
+                    full_path = os.path.join(path,filename)
+                    # relative_path = '/'.join(full_path.split('/')[-3:])
+                    is_label = full_path.split('/')[-2] == 'gt'
+
+                    if is_label:
+                        label_paths.append(full_path)
+                    else:
+                        image_paths.append(full_path)
