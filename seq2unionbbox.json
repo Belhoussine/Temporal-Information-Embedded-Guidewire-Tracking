@@ -1,0 +1,1808 @@
+{
+    "sequence01_frame00000_sequence05_frame00050": [
+        97,
+        133,
+        170,
+        242
+    ],
+    "sequence01_frame00000_sequence25_frame00150": [
+        403,
+        283,
+        458,
+        424
+    ],
+    "sequence01_frame00050_sequence17_frame00400": [
+        137,
+        103,
+        284,
+        260
+    ],
+    "sequence01_frame00050_sequence17_frame00500": [
+        206,
+        155,
+        367,
+        357
+    ],
+    "sequence01_frame00050_sequence18_frame00100": [
+        85,
+        75,
+        343,
+        214
+    ],
+    "sequence01_frame00050_sequence21_frame00100": [
+        176,
+        102,
+        227,
+        226
+    ],
+    "sequence01_frame00050_sequence22_frame00250": [
+        205,
+        147,
+        288,
+        319
+    ],
+    "sequence01_frame00100_sequence07_frame00000": [
+        139,
+        128,
+        338,
+        243
+    ],
+    "sequence01_frame00100_sequence17_frame00000": [
+        58,
+        108,
+        283,
+        247
+    ],
+    "sequence02_frame00000_sequence14_frame00000": [
+        83,
+        60,
+        269,
+        156
+    ],
+    "sequence02_frame00000_sequence19_frame00200": [
+        236,
+        116,
+        416,
+        342
+    ],
+    "sequence02_frame00000_sequence21_frame00200": [
+        187,
+        86,
+        241,
+        216
+    ],
+    "sequence02_frame00050_sequence14_frame00100": [
+        223,
+        89,
+        513,
+        454
+    ],
+    "sequence02_frame00050_sequence18_frame00050": [
+        35,
+        72,
+        258,
+        203
+    ],
+    "sequence02_frame00050_sequence21_frame00250": [
+        173,
+        72,
+        245,
+        224
+    ],
+    "sequence02_frame00087_sequence03_frame00000": [
+        58,
+        126,
+        282,
+        186
+    ],
+    "sequence02_frame00087_sequence18_frame00200": [
+        180,
+        91,
+        369,
+        237
+    ],
+    "sequence02_frame00087_sequence23_frame00578": [
+        82,
+        184,
+        270,
+        343
+    ],
+    "sequence03_frame00000_sequence21_frame00050": [
+        183,
+        64,
+        247,
+        219
+    ],
+    "sequence03_frame00000_sequence21_frame00450": [
+        68,
+        181,
+        132,
+        355
+    ],
+    "sequence03_frame00000_sequence24_frame00150": [
+        172,
+        254,
+        383,
+        330
+    ],
+    "sequence03_frame00046_sequence01_frame00050": [
+        114,
+        193,
+        255,
+        394
+    ],
+    "sequence03_frame00046_sequence21_frame00600": [
+        205,
+        351,
+        382,
+        429
+    ],
+    "sequence04_frame00000_sequence08_frame00146": [
+        74,
+        233,
+        121,
+        404
+    ],
+    "sequence04_frame00000_sequence17_frame00550": [
+        198,
+        191,
+        369,
+        404
+    ],
+    "sequence04_frame00000_sequence21_frame00250": [
+        173,
+        72,
+        245,
+        224
+    ],
+    "sequence04_frame00000_sequence23_frame00400": [
+        73,
+        109,
+        229,
+        253
+    ],
+    "sequence04_frame00000_sequence25_frame00050": [
+        387,
+        283,
+        454,
+        435
+    ],
+    "sequence04_frame00050_sequence23_frame00100": [
+        97,
+        109,
+        237,
+        205
+    ],
+    "sequence04_frame00050_sequence24_frame00100": [
+        93,
+        238,
+        352,
+        325
+    ],
+    "sequence05_frame00000_sequence20_frame00050": [
+        63,
+        84,
+        215,
+        244
+    ],
+    "sequence05_frame00050_sequence14_frame00050": [
+        72,
+        66,
+        375,
+        255
+    ],
+    "sequence05_frame00050_sequence18_frame00100": [
+        85,
+        75,
+        343,
+        214
+    ],
+    "sequence06_frame00000_sequence02_frame00087": [
+        167,
+        309,
+        288,
+        486
+    ],
+    "sequence06_frame00000_sequence08_frame00146": [
+        74,
+        233,
+        121,
+        404
+    ],
+    "sequence06_frame00000_sequence15_frame00050": [
+        225,
+        106,
+        347,
+        375
+    ],
+    "sequence06_frame00000_sequence17_frame00000": [
+        58,
+        108,
+        283,
+        247
+    ],
+    "sequence06_frame00000_sequence17_frame00150": [
+        213,
+        168,
+        365,
+        409
+    ],
+    "sequence06_frame00000_sequence19_frame00200": [
+        236,
+        116,
+        416,
+        342
+    ],
+    "sequence06_frame00000_sequence21_frame00450": [
+        68,
+        181,
+        132,
+        355
+    ],
+    "sequence06_frame00000_sequence23_frame00500": [
+        84,
+        117,
+        188,
+        297
+    ],
+    "sequence07_frame00000_sequence01_frame00000": [
+        115,
+        154,
+        271,
+        317
+    ],
+    "sequence07_frame00000_sequence02_frame00050": [
+        162,
+        208,
+        256,
+        439
+    ],
+    "sequence07_frame00000_sequence23_frame00200": [
+        67,
+        102,
+        187,
+        252
+    ],
+    "sequence07_frame00000_sequence25_frame00000": [
+        390,
+        283,
+        483,
+        439
+    ],
+    "sequence08_frame00000_sequence18_frame00150": [
+        180,
+        80,
+        370,
+        247
+    ],
+    "sequence08_frame00050_sequence09_frame00000": [
+        179,
+        145,
+        384,
+        338
+    ],
+    "sequence08_frame00050_sequence21_frame00200": [
+        187,
+        86,
+        241,
+        216
+    ],
+    "sequence08_frame00050_sequence21_frame00500": [
+        75,
+        200,
+        216,
+        423
+    ],
+    "sequence08_frame00050_sequence24_frame00150": [
+        172,
+        254,
+        383,
+        330
+    ],
+    "sequence08_frame00100_sequence14_frame00050": [
+        72,
+        66,
+        375,
+        255
+    ],
+    "sequence08_frame00100_sequence17_frame00500": [
+        206,
+        155,
+        367,
+        357
+    ],
+    "sequence08_frame00100_sequence19_frame00050": [
+        58,
+        39,
+        288,
+        174
+    ],
+    "sequence08_frame00100_sequence19_frame00150": [
+        211,
+        71,
+        370,
+        295
+    ],
+    "sequence08_frame00100_sequence21_frame00350": [
+        85,
+        166,
+        214,
+        270
+    ],
+    "sequence08_frame00100_sequence22_frame00300": [
+        236,
+        174,
+        439,
+        422
+    ],
+    "sequence08_frame00146_sequence17_frame00350": [
+        122,
+        100,
+        285,
+        239
+    ],
+    "sequence08_frame00146_sequence21_frame00400": [
+        71,
+        180,
+        156,
+        332
+    ],
+    "sequence08_frame00146_sequence23_frame00100": [
+        97,
+        109,
+        237,
+        205
+    ],
+    "sequence09_frame00000_sequence04_frame00000": [
+        148,
+        139,
+        257,
+        312
+    ],
+    "sequence09_frame00000_sequence20_frame00050": [
+        63,
+        84,
+        215,
+        244
+    ],
+    "sequence09_frame00050_sequence23_frame00200": [
+        67,
+        102,
+        187,
+        252
+    ],
+    "sequence09_frame00100_sequence04_frame00000": [
+        148,
+        139,
+        257,
+        312
+    ],
+    "sequence09_frame00100_sequence17_frame00350": [
+        122,
+        100,
+        285,
+        239
+    ],
+    "sequence10_frame00000_sequence14_frame00000": [
+        83,
+        60,
+        269,
+        156
+    ],
+    "sequence10_frame00000_sequence21_frame00050": [
+        183,
+        64,
+        247,
+        219
+    ],
+    "sequence14_frame00000_sequence02_frame00050": [
+        162,
+        208,
+        256,
+        439
+    ],
+    "sequence14_frame00000_sequence08_frame00146": [
+        74,
+        233,
+        121,
+        404
+    ],
+    "sequence14_frame00000_sequence17_frame00350": [
+        122,
+        100,
+        285,
+        239
+    ],
+    "sequence14_frame00000_sequence20_frame00000": [
+        71,
+        78,
+        208,
+        206
+    ],
+    "sequence14_frame00050_sequence19_frame00050": [
+        58,
+        39,
+        288,
+        174
+    ],
+    "sequence14_frame00050_sequence21_frame00300": [
+        130,
+        119,
+        227,
+        217
+    ],
+    "sequence14_frame00050_sequence25_frame00150": [
+        403,
+        283,
+        458,
+        424
+    ],
+    "sequence14_frame00100_sequence17_frame00000": [
+        58,
+        108,
+        283,
+        247
+    ],
+    "sequence14_frame00100_sequence18_frame00150": [
+        180,
+        80,
+        370,
+        247
+    ],
+    "sequence14_frame00100_sequence21_frame00400": [
+        71,
+        180,
+        156,
+        332
+    ],
+    "sequence14_frame00100_sequence24_frame00000": [
+        83,
+        124,
+        245,
+        342
+    ],
+    "sequence14_frame00100_sequence25_frame00150": [
+        403,
+        283,
+        458,
+        424
+    ],
+    "sequence15_frame00000_sequence05_frame00000": [
+        97,
+        134,
+        274,
+        211
+    ],
+    "sequence15_frame00000_sequence22_frame00300": [
+        236,
+        174,
+        439,
+        422
+    ],
+    "sequence15_frame00000_sequence23_frame00000": [
+        157,
+        71,
+        239,
+        157
+    ],
+    "sequence15_frame00000_sequence23_frame00300": [
+        75,
+        109,
+        220,
+        244
+    ],
+    "sequence15_frame00050_sequence14_frame00000": [
+        83,
+        60,
+        269,
+        156
+    ],
+    "sequence15_frame00100_sequence02_frame00087": [
+        167,
+        309,
+        288,
+        486
+    ],
+    "sequence15_frame00100_sequence03_frame00046": [
+        157,
+        130,
+        312,
+        232
+    ],
+    "sequence15_frame00100_sequence08_frame00146": [
+        74,
+        233,
+        121,
+        404
+    ],
+    "sequence15_frame00100_sequence22_frame00200": [
+        108,
+        136,
+        268,
+        313
+    ],
+    "sequence17_frame00000_sequence19_frame00100": [
+        137,
+        51,
+        360,
+        249
+    ],
+    "sequence17_frame00000_sequence21_frame00150": [
+        179,
+        88,
+        236,
+        219
+    ],
+    "sequence17_frame00000_sequence23_frame00550": [
+        82,
+        132,
+        270,
+        343
+    ],
+    "sequence17_frame00050_sequence14_frame00100": [
+        223,
+        89,
+        513,
+        454
+    ],
+    "sequence17_frame00050_sequence18_frame00300": [
+        218,
+        100,
+        408,
+        256
+    ],
+    "sequence17_frame00100_sequence08_frame00100": [
+        76,
+        210,
+        143,
+        373
+    ],
+    "sequence17_frame00100_sequence23_frame00500": [
+        84,
+        117,
+        188,
+        297
+    ],
+    "sequence17_frame00150_sequence01_frame00100": [
+        160,
+        349,
+        422,
+        395
+    ],
+    "sequence17_frame00150_sequence23_frame00578": [
+        82,
+        184,
+        270,
+        343
+    ],
+    "sequence17_frame00150_sequence24_frame00050": [
+        80,
+        148,
+        271,
+        333
+    ],
+    "sequence17_frame00150_sequence24_frame00150": [
+        172,
+        254,
+        383,
+        330
+    ],
+    "sequence17_frame00200_sequence02_frame00050": [
+        162,
+        208,
+        256,
+        360
+    ],
+    "sequence17_frame00200_sequence21_frame00150": [
+        179,
+        88,
+        236,
+        219
+    ],
+    "sequence17_frame00200_sequence23_frame00150": [
+        67,
+        105,
+        205,
+        236
+    ],
+    "sequence17_frame00200_sequence24_frame00000": [
+        83,
+        124,
+        245,
+        342
+    ],
+    "sequence17_frame00250_sequence17_frame00634": [
+        176,
+        118,
+        387,
+        434
+    ],
+    "sequence17_frame00250_sequence25_frame00150": [
+        403,
+        283,
+        458,
+        424
+    ],
+    "sequence17_frame00300_sequence09_frame00100": [
+        298,
+        192,
+        414,
+        356
+    ],
+    "sequence17_frame00300_sequence19_frame00100": [
+        137,
+        51,
+        360,
+        249
+    ],
+    "sequence17_frame00300_sequence21_frame00400": [
+        71,
+        180,
+        156,
+        332
+    ],
+    "sequence17_frame00350_sequence21_frame00100": [
+        176,
+        102,
+        227,
+        226
+    ],
+    "sequence17_frame00350_sequence25_frame00100": [
+        393,
+        284,
+        453,
+        428
+    ],
+    "sequence17_frame00400_sequence08_frame00100": [
+        76,
+        210,
+        143,
+        373
+    ],
+    "sequence17_frame00400_sequence08_frame00146": [
+        74,
+        233,
+        121,
+        404
+    ],
+    "sequence17_frame00400_sequence15_frame00100": [
+        278,
+        161,
+        380,
+        474
+    ],
+    "sequence17_frame00400_sequence20_frame00000": [
+        71,
+        78,
+        208,
+        206
+    ],
+    "sequence17_frame00400_sequence20_frame00100": [
+        72,
+        94,
+        249,
+        348
+    ],
+    "sequence17_frame00400_sequence22_frame00050": [
+        1,
+        119,
+        169,
+        242
+    ],
+    "sequence17_frame00450_sequence07_frame00000": [
+        139,
+        128,
+        338,
+        243
+    ],
+    "sequence17_frame00450_sequence08_frame00100": [
+        76,
+        210,
+        143,
+        373
+    ],
+    "sequence17_frame00500_sequence03_frame00000": [
+        58,
+        126,
+        282,
+        186
+    ],
+    "sequence17_frame00500_sequence17_frame00100": [
+        198,
+        152,
+        370,
+        361
+    ],
+    "sequence17_frame00500_sequence21_frame00600": [
+        205,
+        351,
+        382,
+        429
+    ],
+    "sequence17_frame00500_sequence22_frame00100": [
+        1,
+        122,
+        167,
+        205
+    ],
+    "sequence17_frame00550_sequence14_frame00000": [
+        83,
+        60,
+        269,
+        156
+    ],
+    "sequence17_frame00550_sequence21_frame00100": [
+        176,
+        102,
+        227,
+        226
+    ],
+    "sequence17_frame00550_sequence24_frame00150": [
+        172,
+        254,
+        383,
+        330
+    ],
+    "sequence17_frame00600_sequence17_frame00550": [
+        198,
+        191,
+        369,
+        404
+    ],
+    "sequence17_frame00600_sequence18_frame00389": [
+        295,
+        147,
+        445,
+        315
+    ],
+    "sequence17_frame00600_sequence21_frame00550": [
+        89,
+        328,
+        360,
+        425
+    ],
+    "sequence17_frame00600_sequence23_frame00550": [
+        82,
+        132,
+        270,
+        343
+    ],
+    "sequence17_frame00634_sequence01_frame00050": [
+        114,
+        193,
+        255,
+        394
+    ],
+    "sequence17_frame00634_sequence17_frame00250": [
+        199,
+        154,
+        346,
+        392
+    ],
+    "sequence17_frame00634_sequence17_frame00600": [
+        176,
+        118,
+        356,
+        395
+    ],
+    "sequence17_frame00634_sequence20_frame00050": [
+        63,
+        84,
+        215,
+        244
+    ],
+    "sequence18_frame00000_sequence04_frame00000": [
+        148,
+        139,
+        257,
+        312
+    ],
+    "sequence18_frame00000_sequence19_frame00100": [
+        137,
+        51,
+        360,
+        249
+    ],
+    "sequence18_frame00050_sequence14_frame00000": [
+        83,
+        60,
+        269,
+        156
+    ],
+    "sequence18_frame00050_sequence17_frame00150": [
+        213,
+        168,
+        365,
+        409
+    ],
+    "sequence18_frame00050_sequence21_frame00450": [
+        68,
+        181,
+        132,
+        355
+    ],
+    "sequence18_frame00100_sequence15_frame00000": [
+        157,
+        44,
+        332,
+        281
+    ],
+    "sequence18_frame00100_sequence21_frame00300": [
+        130,
+        119,
+        227,
+        217
+    ],
+    "sequence18_frame00100_sequence23_frame00150": [
+        67,
+        105,
+        205,
+        236
+    ],
+    "sequence18_frame00150_sequence24_frame00100": [
+        93,
+        238,
+        352,
+        325
+    ],
+    "sequence18_frame00200_sequence17_frame00050": [
+        156,
+        117,
+        363,
+        352
+    ],
+    "sequence18_frame00200_sequence17_frame00200": [
+        215,
+        177,
+        373,
+        392
+    ],
+    "sequence18_frame00200_sequence18_frame00100": [
+        85,
+        75,
+        343,
+        214
+    ],
+    "sequence18_frame00200_sequence25_frame00000": [
+        390,
+        283,
+        483,
+        439
+    ],
+    "sequence18_frame00250_sequence05_frame00000": [
+        97,
+        134,
+        274,
+        211
+    ],
+    "sequence18_frame00250_sequence25_frame00000": [
+        390,
+        283,
+        483,
+        439
+    ],
+    "sequence18_frame00300_sequence14_frame00050": [
+        72,
+        66,
+        375,
+        255
+    ],
+    "sequence18_frame00300_sequence21_frame00300": [
+        130,
+        119,
+        227,
+        217
+    ],
+    "sequence18_frame00300_sequence21_frame00500": [
+        75,
+        200,
+        216,
+        423
+    ],
+    "sequence18_frame00350_sequence02_frame00050": [
+        162,
+        208,
+        256,
+        439
+    ],
+    "sequence18_frame00350_sequence08_frame00146": [
+        74,
+        233,
+        121,
+        404
+    ],
+    "sequence18_frame00350_sequence21_frame00550": [
+        89,
+        328,
+        360,
+        425
+    ],
+    "sequence18_frame00389_sequence08_frame00000": [
+        102,
+        207,
+        241,
+        300
+    ],
+    "sequence18_frame00389_sequence17_frame00300": [
+        132,
+        100,
+        323,
+        325
+    ],
+    "sequence18_frame00389_sequence19_frame00000": [
+        17,
+        41,
+        224,
+        207
+    ],
+    "sequence18_frame00389_sequence20_frame00050": [
+        63,
+        84,
+        215,
+        244
+    ],
+    "sequence18_frame00389_sequence23_frame00200": [
+        67,
+        102,
+        187,
+        252
+    ],
+    "sequence19_frame00000_sequence04_frame00000": [
+        148,
+        139,
+        257,
+        312
+    ],
+    "sequence19_frame00000_sequence15_frame00000": [
+        157,
+        44,
+        332,
+        281
+    ],
+    "sequence19_frame00000_sequence18_frame00350": [
+        278,
+        126,
+        440,
+        298
+    ],
+    "sequence19_frame00000_sequence23_frame00300": [
+        75,
+        109,
+        220,
+        244
+    ],
+    "sequence19_frame00050_sequence17_frame00600": [
+        176,
+        118,
+        356,
+        395
+    ],
+    "sequence19_frame00050_sequence22_frame00200": [
+        108,
+        136,
+        268,
+        313
+    ],
+    "sequence19_frame00100_sequence21_frame00000": [
+        188,
+        70,
+        244,
+        193
+    ],
+    "sequence19_frame00100_sequence21_frame00150": [
+        179,
+        88,
+        236,
+        219
+    ],
+    "sequence19_frame00150_sequence18_frame00200": [
+        180,
+        91,
+        369,
+        237
+    ],
+    "sequence19_frame00150_sequence23_frame00550": [
+        82,
+        132,
+        270,
+        343
+    ],
+    "sequence19_frame00200_sequence25_frame00100": [
+        393,
+        284,
+        453,
+        428
+    ],
+    "sequence19_frame00244_sequence02_frame00087": [
+        167,
+        309,
+        288,
+        486
+    ],
+    "sequence19_frame00244_sequence17_frame00200": [
+        215,
+        177,
+        373,
+        392
+    ],
+    "sequence19_frame00244_sequence17_frame00400": [
+        137,
+        103,
+        284,
+        260
+    ],
+    "sequence19_frame00244_sequence21_frame00500": [
+        75,
+        200,
+        216,
+        423
+    ],
+    "sequence19_frame00244_sequence25_frame00200": [
+        405,
+        285,
+        472,
+        428
+    ],
+    "sequence20_frame00000_sequence02_frame00087": [
+        167,
+        309,
+        288,
+        486
+    ],
+    "sequence20_frame00000_sequence14_frame00100": [
+        223,
+        89,
+        513,
+        454
+    ],
+    "sequence20_frame00050_sequence08_frame00146": [
+        74,
+        233,
+        121,
+        404
+    ],
+    "sequence20_frame00100_sequence17_frame00250": [
+        199,
+        154,
+        346,
+        392
+    ],
+    "sequence20_frame00100_sequence19_frame00100": [
+        137,
+        51,
+        360,
+        249
+    ],
+    "sequence21_frame00000_sequence05_frame00000": [
+        97,
+        134,
+        274,
+        211
+    ],
+    "sequence21_frame00000_sequence15_frame00050": [
+        225,
+        106,
+        347,
+        375
+    ],
+    "sequence21_frame00050_sequence17_frame00100": [
+        198,
+        152,
+        370,
+        361
+    ],
+    "sequence21_frame00050_sequence24_frame00183": [
+        189,
+        254,
+        385,
+        355
+    ],
+    "sequence21_frame00100_sequence03_frame00000": [
+        58,
+        126,
+        282,
+        186
+    ],
+    "sequence21_frame00100_sequence17_frame00500": [
+        206,
+        155,
+        367,
+        357
+    ],
+    "sequence21_frame00100_sequence18_frame00100": [
+        85,
+        75,
+        343,
+        214
+    ],
+    "sequence21_frame00100_sequence19_frame00000": [
+        17,
+        41,
+        224,
+        207
+    ],
+    "sequence21_frame00150_sequence17_frame00100": [
+        198,
+        152,
+        370,
+        361
+    ],
+    "sequence21_frame00150_sequence18_frame00000": [
+        24,
+        86,
+        186,
+        277
+    ],
+    "sequence21_frame00150_sequence18_frame00350": [
+        278,
+        126,
+        440,
+        298
+    ],
+    "sequence21_frame00150_sequence22_frame00300": [
+        236,
+        174,
+        439,
+        422
+    ],
+    "sequence21_frame00200_sequence20_frame00100": [
+        72,
+        94,
+        249,
+        348
+    ],
+    "sequence21_frame00200_sequence22_frame00000": [
+        1,
+        145,
+        321,
+        374
+    ],
+    "sequence21_frame00250_sequence02_frame00000": [
+        84,
+        127,
+        242,
+        303
+    ],
+    "sequence21_frame00250_sequence18_frame00100": [
+        85,
+        75,
+        343,
+        214
+    ],
+    "sequence21_frame00250_sequence21_frame00050": [
+        183,
+        64,
+        247,
+        219
+    ],
+    "sequence21_frame00250_sequence21_frame00450": [
+        68,
+        181,
+        132,
+        355
+    ],
+    "sequence21_frame00250_sequence23_frame00500": [
+        84,
+        117,
+        188,
+        297
+    ],
+    "sequence21_frame00300_sequence05_frame00000": [
+        97,
+        134,
+        274,
+        211
+    ],
+    "sequence21_frame00300_sequence17_frame00300": [
+        132,
+        100,
+        323,
+        325
+    ],
+    "sequence21_frame00300_sequence23_frame00300": [
+        75,
+        109,
+        220,
+        244
+    ],
+    "sequence21_frame00300_sequence23_frame00350": [
+        78,
+        108,
+        178,
+        244
+    ],
+    "sequence21_frame00350_sequence15_frame00100": [
+        278,
+        161,
+        380,
+        474
+    ],
+    "sequence21_frame00350_sequence17_frame00500": [
+        206,
+        155,
+        367,
+        357
+    ],
+    "sequence21_frame00350_sequence21_frame00600": [
+        205,
+        351,
+        382,
+        429
+    ],
+    "sequence21_frame00350_sequence23_frame00450": [
+        87,
+        106,
+        226,
+        244
+    ],
+    "sequence21_frame00400_sequence03_frame00046": [
+        157,
+        130,
+        312,
+        232
+    ],
+    "sequence21_frame00400_sequence09_frame00050": [
+        255,
+        131,
+        379,
+        288
+    ],
+    "sequence21_frame00450_sequence03_frame00046": [
+        157,
+        130,
+        312,
+        232
+    ],
+    "sequence21_frame00450_sequence17_frame00050": [
+        156,
+        117,
+        363,
+        352
+    ],
+    "sequence21_frame00450_sequence23_frame00050": [
+        129,
+        92,
+        239,
+        164
+    ],
+    "sequence21_frame00550_sequence21_frame00350": [
+        85,
+        166,
+        214,
+        270
+    ],
+    "sequence21_frame00600_sequence03_frame00046": [
+        157,
+        130,
+        312,
+        232
+    ],
+    "sequence21_frame00600_sequence08_frame00050": [
+        84,
+        203,
+        181,
+        340
+    ],
+    "sequence21_frame00600_sequence15_frame00000": [
+        157,
+        44,
+        332,
+        281
+    ],
+    "sequence21_frame00600_sequence19_frame00200": [
+        236,
+        116,
+        416,
+        342
+    ],
+    "sequence21_frame00600_sequence22_frame00100": [
+        1,
+        122,
+        167,
+        205
+    ],
+    "sequence22_frame00000_sequence09_frame00100": [
+        298,
+        192,
+        414,
+        356
+    ],
+    "sequence22_frame00000_sequence15_frame00100": [
+        278,
+        161,
+        380,
+        474
+    ],
+    "sequence22_frame00000_sequence17_frame00400": [
+        137,
+        103,
+        284,
+        260
+    ],
+    "sequence22_frame00000_sequence18_frame00300": [
+        218,
+        100,
+        408,
+        256
+    ],
+    "sequence22_frame00000_sequence21_frame00100": [
+        176,
+        102,
+        227,
+        226
+    ],
+    "sequence22_frame00000_sequence21_frame00400": [
+        71,
+        180,
+        156,
+        332
+    ],
+    "sequence22_frame00050_sequence01_frame00000": [
+        115,
+        154,
+        271,
+        317
+    ],
+    "sequence22_frame00050_sequence17_frame00100": [
+        198,
+        152,
+        370,
+        361
+    ],
+    "sequence22_frame00050_sequence20_frame00050": [
+        63,
+        84,
+        215,
+        244
+    ],
+    "sequence22_frame00050_sequence21_frame00550": [
+        89,
+        328,
+        360,
+        425
+    ],
+    "sequence22_frame00050_sequence24_frame00183": [
+        189,
+        254,
+        385,
+        355
+    ],
+    "sequence22_frame00100_sequence10_frame00000": [
+        280,
+        148,
+        460,
+        275
+    ],
+    "sequence22_frame00150_sequence21_frame00500": [
+        75,
+        200,
+        216,
+        423
+    ],
+    "sequence22_frame00150_sequence25_frame00050": [
+        387,
+        283,
+        454,
+        435
+    ],
+    "sequence22_frame00200_sequence08_frame00050": [
+        84,
+        203,
+        181,
+        340
+    ],
+    "sequence22_frame00200_sequence17_frame00050": [
+        156,
+        117,
+        363,
+        352
+    ],
+    "sequence22_frame00250_sequence09_frame00000": [
+        179,
+        145,
+        384,
+        338
+    ],
+    "sequence22_frame00250_sequence18_frame00100": [
+        85,
+        75,
+        343,
+        214
+    ],
+    "sequence22_frame00300_sequence01_frame00000": [
+        115,
+        154,
+        271,
+        317
+    ],
+    "sequence22_frame00300_sequence05_frame00000": [
+        97,
+        134,
+        274,
+        211
+    ],
+    "sequence22_frame00300_sequence24_frame00100": [
+        93,
+        238,
+        352,
+        325
+    ],
+    "sequence23_frame00000_sequence06_frame00000": [
+        170,
+        169,
+        303,
+        245
+    ],
+    "sequence23_frame00050_sequence18_frame00150": [
+        180,
+        80,
+        370,
+        247
+    ],
+    "sequence23_frame00050_sequence22_frame00150": [
+        1,
+        120,
+        248,
+        216
+    ],
+    "sequence23_frame00100_sequence02_frame00050": [
+        162,
+        208,
+        256,
+        439
+    ],
+    "sequence23_frame00100_sequence23_frame00000": [
+        157,
+        71,
+        239,
+        157
+    ],
+    "sequence23_frame00100_sequence24_frame00150": [
+        172,
+        254,
+        383,
+        330
+    ],
+    "sequence23_frame00150_sequence07_frame00000": [
+        139,
+        128,
+        338,
+        243
+    ],
+    "sequence23_frame00150_sequence17_frame00634": [
+        176,
+        118,
+        387,
+        434
+    ],
+    "sequence23_frame00150_sequence18_frame00250": [
+        191,
+        87,
+        385,
+        243
+    ],
+    "sequence23_frame00150_sequence21_frame00050": [
+        183,
+        64,
+        247,
+        219
+    ],
+    "sequence23_frame00150_sequence21_frame00600": [
+        205,
+        351,
+        382,
+        429
+    ],
+    "sequence23_frame00200_sequence23_frame00350": [
+        78,
+        108,
+        178,
+        244
+    ],
+    "sequence23_frame00200_sequence25_frame00050": [
+        387,
+        283,
+        454,
+        435
+    ],
+    "sequence23_frame00250_sequence01_frame00100": [
+        160,
+        349,
+        422,
+        395
+    ],
+    "sequence23_frame00300_sequence09_frame00050": [
+        255,
+        131,
+        379,
+        288
+    ],
+    "sequence23_frame00300_sequence19_frame00000": [
+        17,
+        41,
+        224,
+        207
+    ],
+    "sequence23_frame00300_sequence21_frame00000": [
+        188,
+        70,
+        244,
+        193
+    ],
+    "sequence23_frame00300_sequence24_frame00100": [
+        93,
+        238,
+        352,
+        325
+    ],
+    "sequence23_frame00350_sequence04_frame00050": [
+        200,
+        210,
+        383,
+        419
+    ],
+    "sequence23_frame00350_sequence18_frame00200": [
+        180,
+        91,
+        369,
+        237
+    ],
+    "sequence23_frame00350_sequence18_frame00350": [
+        278,
+        126,
+        440,
+        298
+    ],
+    "sequence23_frame00400_sequence18_frame00150": [
+        180,
+        80,
+        370,
+        247
+    ],
+    "sequence23_frame00400_sequence21_frame00450": [
+        68,
+        181,
+        132,
+        355
+    ],
+    "sequence23_frame00400_sequence23_frame00050": [
+        129,
+        92,
+        239,
+        164
+    ],
+    "sequence23_frame00450_sequence14_frame00100": [
+        223,
+        89,
+        513,
+        454
+    ],
+    "sequence23_frame00450_sequence17_frame00550": [
+        198,
+        191,
+        369,
+        404
+    ],
+    "sequence23_frame00450_sequence23_frame00350": [
+        78,
+        108,
+        178,
+        244
+    ],
+    "sequence23_frame00500_sequence04_frame00000": [
+        148,
+        139,
+        257,
+        312
+    ],
+    "sequence23_frame00500_sequence17_frame00200": [
+        215,
+        177,
+        373,
+        392
+    ],
+    "sequence23_frame00500_sequence21_frame00500": [
+        75,
+        200,
+        216,
+        423
+    ],
+    "sequence23_frame00500_sequence22_frame00100": [
+        1,
+        122,
+        167,
+        205
+    ],
+    "sequence23_frame00550_sequence10_frame00000": [
+        280,
+        148,
+        460,
+        275
+    ],
+    "sequence23_frame00550_sequence15_frame00100": [
+        278,
+        161,
+        380,
+        474
+    ],
+    "sequence23_frame00550_sequence18_frame00389": [
+        295,
+        147,
+        445,
+        315
+    ],
+    "sequence23_frame00550_sequence24_frame00000": [
+        83,
+        124,
+        245,
+        342
+    ],
+    "sequence23_frame00578_sequence23_frame00100": [
+        97,
+        109,
+        237,
+        205
+    ],
+    "sequence24_frame00000_sequence07_frame00000": [
+        139,
+        128,
+        338,
+        243
+    ],
+    "sequence24_frame00000_sequence18_frame00300": [
+        218,
+        100,
+        408,
+        256
+    ],
+    "sequence24_frame00000_sequence21_frame00550": [
+        89,
+        328,
+        360,
+        425
+    ],
+    "sequence24_frame00000_sequence23_frame00150": [
+        67,
+        105,
+        205,
+        236
+    ],
+    "sequence24_frame00000_sequence23_frame00500": [
+        84,
+        117,
+        188,
+        297
+    ],
+    "sequence24_frame00050_sequence08_frame00000": [
+        102,
+        207,
+        241,
+        300
+    ],
+    "sequence24_frame00050_sequence20_frame00100": [
+        72,
+        94,
+        249,
+        348
+    ],
+    "sequence24_frame00050_sequence23_frame00578": [
+        82,
+        184,
+        270,
+        343
+    ],
+    "sequence24_frame00100_sequence02_frame00087": [
+        167,
+        309,
+        288,
+        486
+    ],
+    "sequence24_frame00100_sequence23_frame00250": [
+        74,
+        110,
+        166,
+        254
+    ],
+    "sequence24_frame00100_sequence23_frame00500": [
+        84,
+        117,
+        188,
+        297
+    ],
+    "sequence24_frame00150_sequence08_frame00100": [
+        76,
+        210,
+        143,
+        373
+    ],
+    "sequence24_frame00150_sequence17_frame00450": [
+        168,
+        152,
+        369,
+        358
+    ],
+    "sequence24_frame00183_sequence19_frame00050": [
+        58,
+        39,
+        288,
+        174
+    ],
+    "sequence25_frame00000_sequence03_frame00000": [
+        58,
+        126,
+        282,
+        186
+    ],
+    "sequence25_frame00000_sequence20_frame00050": [
+        63,
+        84,
+        215,
+        244
+    ],
+    "sequence25_frame00000_sequence21_frame00150": [
+        179,
+        88,
+        236,
+        219
+    ],
+    "sequence25_frame00050_sequence17_frame00550": [
+        198,
+        191,
+        369,
+        404
+    ],
+    "sequence25_frame00050_sequence19_frame00244": [
+        267,
+        130,
+        421,
+        366
+    ],
+    "sequence25_frame00050_sequence21_frame00350": [
+        85,
+        166,
+        214,
+        270
+    ],
+    "sequence25_frame00050_sequence22_frame00100": [
+        1,
+        122,
+        167,
+        205
+    ],
+    "sequence25_frame00050_sequence22_frame00200": [
+        108,
+        136,
+        268,
+        313
+    ],
+    "sequence25_frame00100_sequence01_frame00000": [
+        115,
+        154,
+        271,
+        317
+    ],
+    "sequence25_frame00150_sequence01_frame00000": [
+        115,
+        154,
+        271,
+        317
+    ],
+    "sequence25_frame00150_sequence18_frame00389": [
+        295,
+        147,
+        445,
+        315
+    ],
+    "sequence25_frame00200_sequence03_frame00000": [
+        58,
+        126,
+        282,
+        186
+    ],
+    "sequence25_frame00200_sequence21_frame00200": [
+        187,
+        86,
+        241,
+        216
+    ]
+}

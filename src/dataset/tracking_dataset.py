@@ -8,6 +8,8 @@ import torch
 import numpy as np
 from PIL import Image
 from torch.utils.data import Dataset
+import torchvision.transforms as transforms
+from torchvision.datasets import CocoDetection
 
 from src.utils.io import read_image
 from src.utils.dataset import mask_to_bbox, get_img_gt_paths
@@ -42,21 +44,29 @@ class TrackingDataset(Dataset):
         sample = image, label
         return sample
 
-    # def show_image(self, image, pil=False, tensor=False):
-    #     if pil:
-    #         image = np.array(image)
-    #     elif tensor:
-    #         image = image.permute((1, 2, 0)).numpy()
-    #     image = image.astype(np.uint8)
-    #     try:
-    #         rgb_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    #     except:
-    #         rgb_img = image
-    #     # cv2.namedWindow("image", cv2.WINDOW_NORMAL)
-    #     cv2.namedWindow("image", cv2.WND_PROP_FULLSCREEN)
-    #     cv2.setWindowProperty(
-    #         "image", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
-    #     cv2.imshow('image', rgb_img)
-    #     cv2.waitKey(0)
-    #     cv2.destroyAllWindows()
-    #     cv2.waitKey(1)
+
+# CoCo dataset
+class TrackingCoCoDataset(CocoDetection):
+    def __init__(self, root, processor, train=True):
+        ann_file = f"{root}/annotations/{'custom_train.json' if train else 'custom_val.json'}"
+        super().__init__(root, ann_file)
+        self.processor = processor
+        self.bbox_only=False
+
+    def __getitem__(self, index):
+        # read in PIL image and target in COCO format
+        img, target = super().__getitem__(index)
+        img = img.convert("RGB")
+
+        if self.bbox_only:
+            return target
+
+        # preprocess image and target (converting target to DETR format, resizing + normalization of both image and target)
+        image_id = self.ids[index]
+        target = {'image_id': image_id, 'annotations': target}
+
+        encoding = self.processor(images=img, annotations=target, return_tensors="pt")
+        pixel_values = encoding["pixel_values"].squeeze() # remove batch dimension
+        target = encoding["labels"][0] # remove batch dimension
+
+        return pixel_values, target

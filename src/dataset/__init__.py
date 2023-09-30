@@ -1,4 +1,4 @@
-from src.dataset.tracking_dataset import TrackingDataset
+from src.dataset.tracking_dataset import TrackingDataset, TrackingCoCoDataset
 from torch.utils.data import random_split
 
 def get_train_val_split(dataset, val_split=0.2):

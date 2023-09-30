@@ -4,24 +4,24 @@
 The project aims to create a real-time system that can **detect**, **track**, and **segment** guidewires during surgical procedures. The initial focus is on a *single guidewire*, but the system also explores the possibility of tracking *multiple guidewires* simultaneously to handle complex procedures. By improving the efficiency of guidewire placement, the system aims to reduce surgical time and potential complications.
 
 ## Methodology
-- [ ] Dataset
-    - [ ] Detection Datasets
-        - [ ] Convert mask labels from our segmentation datasets to bounding box labels.
+- [x] Dataset
+    - [x] Detection Datasets
+        - [x] Convert mask labels from our segmentation datasets to bounding box labels.
     - [x] Segmentation Datasets
         - Synthetic Guidewire Dataset
         - DHM & DHM_v2 Datasets
-- [ ] Detection & Tracking
-    - [ ] Benchmarking
-        - [ ] Benchmark RobustPCA-based methods for image-based guidewire tracking.
-        - [ ] Benchmark Transformer-based methods
-    - [ ] Implementation
-        - [ ] Implement RobustPCA for our purpose
-        - [ ] Fine-tune pre-trained transformer-based models for our purpose
-    - [ ] Evaluation & Testing
-- [ ] Segmentation
-    - [ ] Benchmarking
-    - [ ] Implementation
-    - [ ] Evaluation & Testing
+- [x] Detection & Tracking
+    - [x] Benchmarking
+        - [x] Benchmark RobustPCA-based methods for image-based guidewire tracking.
+        - [x] Benchmark Transformer-based methods
+    - [x] Implementation
+        - [x] Implement RobustPCA for our purpose
+        - [x] Fine-tune pre-trained transformer-based models for our purpose
+    - [x] Evaluation & Testing
+- [x] Segmentation
+    - [x] Benchmarking
+    - [x] Implementation
+    - [x] Evaluation & Testing
 
 ## Datasets
 ### 1. Synthetic Guidewire Dataset
@@ -99,17 +99,13 @@ The project aims to create a real-time system that can **detect**, **track**, an
     - Fine tune on Synthetic / DHM
         - [x] Create a custom PyTorch dataset corresponding to our datasets
         - [x] Create a custom PyTorch dataloader for the dataset
-        - [ ] Find pre-trained model and fine tune it
+        - [ ] Find pre-trained transformer model for object detection and fine tune it
             - Model: https://huggingface.co/facebook/detr-resnet-50
             - Fine-tuning tutorial: https://huggingface.co/docs/transformers/tasks/object_detection
             - Fine-tuning DeTR github tutorial: https://github.com/woctezuma/finetune-detr 
+            - https://github.com/NielsRogge/Transformers-Tutorials/blob/master/DETR/Fine_tuning_DetrForObjectDetection_on_custom_dataset_(balloon).ipynb
             - Gray-scale finetuning: https://towardsdatascience.com/transfer-learning-on-greyscale-images-how-to-fine-tune-pretrained-models-on-black-and-white-9a5150755c7a
 
 ## Segmentation Models
-- TODO
+- RPCA-Unet
 
-## Results
-- TODO
-
-## References
-- TODO

@@ -6,6 +6,8 @@ wandb/
 nohup.out
 .vscode/
 .nfs*
+lightning_logs/
+blackout.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
