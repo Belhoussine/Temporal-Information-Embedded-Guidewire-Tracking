@@ -99,7 +99,7 @@ The project aims to create a real-time system that can **detect**, **track**, an
     - Fine tune on Synthetic / DHM
         - [x] Create a custom PyTorch dataset corresponding to our datasets
         - [x] Create a custom PyTorch dataloader for the dataset
-        - [ ] Find pre-trained transformer model for object detection and fine tune it
+        - [] Find pre-trained transformer model for object detection and fine tune it
             - Model: https://huggingface.co/facebook/detr-resnet-50
             - Fine-tuning tutorial: https://huggingface.co/docs/transformers/tasks/object_detection
             - Fine-tuning DeTR github tutorial: https://github.com/woctezuma/finetune-detr 
