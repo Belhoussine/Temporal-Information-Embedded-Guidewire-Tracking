@@ -87,7 +87,7 @@ def generate_single_sequence(dicName="./Data/rawData/311"):
         torch.cuda.empty_cache()
 
     conter = Converter()
-    f_number = 10
+    f_number = 10 # number of processed frames per iteration
     formout = {'pres': 'concat', 'shape': (64, 64, f_number)}
 
     # process
@@ -96,11 +96,7 @@ def generate_single_sequence(dicName="./Data/rawData/311"):
     fileList = os.listdir(dicName)
     frame_count = 0
     for fileName in fileList:
-        if 'ori' in fileName:
-            ori.append(fileName)
-        if 'IMG' in fileName:
-            ori.append(fileName)
-        if '.png' in fileName:
+        if '.png' in fileName: # uses all .png files
             ori.append(fileName)
     ori = sort_humanly(ori)
     frames = len(ori)
@@ -112,7 +108,7 @@ def generate_single_sequence(dicName="./Data/rawData/311"):
     for fileName in ori:
         img_d = mpimg.imread(dicName + '/' + fileName)
         img_d = rgb2gray(img_d)
-        img_d = cv2.resize(img_d, (512, 512))
+        img_d = cv2.resize(img_d, (512, 512)) # resize image to neccessary size of 512x512
         frameList_d.append(img_d[:, :, None])
         # split patches
         if len(frameList_d) == f_number:
@@ -157,15 +153,15 @@ def generate_single_sequence(dicName="./Data/rawData/311"):
         mask = 1 - outputSeriesS[:, :, i] # 1 - ...
 
         # Thresholding
-        # thresh = 0.95
-        # mask[mask > thresh] = 1
-        # mask[mask <= thresh] = 0
+        thresh = 0.95 # threshold for binary segmentation
+        mask[mask > thresh] = 1
+        mask[mask <= thresh] = 0
         
-        # mask = 1 - mask
+        mask = 1 - mask
 
-        # if mask.ndim == 3:
-        #     # Assuming mask is in BGR color format, convert it to grayscale
-        #     mask = cv2.cvtColor(mask, cv2.COLOR_BGR2GRAY)
+        if mask.ndim == 3:
+             # Assuming mask is in BGR color format, convert it to grayscale
+             mask = cv2.cvtColor(mask, cv2.COLOR_BGR2GRAY)
 
         # # Ensure the mask is 8-bit depth
         # if mask.dtype != np.uint8:
